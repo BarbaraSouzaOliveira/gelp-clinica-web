@@ -34,13 +34,13 @@ const useStyles = makeStyles({
   },
 });
 
-const Grid = () => {
+const Grid = (props) => {
   const classes = useStyles();
 
   return (
     <TableContainer className={classes.tableContainer}>
       <div className={classes.tableHeader}>
-        <h2>Minha Grid</h2>
+        <h2>{props.nameTable}</h2>
         <Button className={classes.createButton} variant="contained">
           Criar novo item
         </Button>
@@ -48,22 +48,29 @@ const Grid = () => {
       <Table>
         <TableHead>
           <TableRow>
-            <TableCell>Tabela Nome</TableCell>
-            <TableCell align="right">Ações</TableCell>
+            <TableCell>{props.ContentTable}</TableCell>
+            <TableCell align="right"></TableCell>
           </TableRow>
         </TableHead>
         <TableBody>
-          <TableRow>
-            <TableCell>Item 1</TableCell>
-            <TableCell align="right">
-              <IconButton>
-                <EditIcon />
-              </IconButton>
-              <IconButton>
-                <DeleteIcon />
-              </IconButton>
-            </TableCell>
-          </TableRow>
+          
+            {
+              props.itemTable.map((item) => {
+                return (
+                  <TableRow>
+                    <TableCell>{item.name}</TableCell>
+                    <TableCell align="right">
+                      <IconButton>
+                        <EditIcon />
+                      </IconButton>
+                      <IconButton>
+                        <DeleteIcon />
+                      </IconButton>
+                    </TableCell>
+                  </TableRow>
+                )
+              })
+            }
         </TableBody>
       </Table>
     </TableContainer>
