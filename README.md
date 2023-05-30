@@ -1,70 +1,98 @@
-# Getting Started with Create React App
+# Começando nosso Projeto
+## Dependencias
+Dependencias necessarias -> Node e Git (instalem)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Clonar e rodar o codigo
+Primeiro vamos até o "code -> clone" no github e copiamos o codigo - Sua escolha HTTP ou SSH
 
-## Available Scripts
+```
+git clone seu_codigo_copiado_do_git
+```
+então abra o VSCode - ou o editor de texto da sua escolha - e abra o projeto clonado
 
-In the project directory, you can run:
+Abra o terminal no projeto (na pasta do projeto) e instale as dependencias do projeto 
+com o comando
+```
+npm install
+```
+Quando finalizar rode o projeto com o comando
+```
+npm start
+```
 
-### `npm start`
+Quando o comando terminar ira abrir uma aba na internet 
+[http://localhost:3000](http://localhost:3000).
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Preview do Projeto
+Preenchimento e visualização de formularios de dados pessoais e necessidade
+clinicas que foram atendidas.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Dividiremos o Formulario (Prontuario) nas seguintes classes:
+Cada Classe contemplara um CRUD (create,read,update,delete)
 
-### `npm test`
+Paciente:
+- Nome: string
+- Celular1: number
+- Celular2: number
+- CPF: string
+- Email: string
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Nivel de Complexidade:
+- Nome: String
 
-### `npm run build`
+Especialidade:
+- Nome: String
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Grupo de Estagio ?
+- Nome?: String
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Aluno:
+- Nome: String
+- Email: String
+- Celular: Number
+- MAtricula: Number
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Prontuario: 
+- Tudo junto e um pouco mais 
 
-### `npm run eject`
+## Padrões de Codigo
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+- Variaveis em camel case -> varExempleNameInCamelCase
+- Mome de metodos, classes funcoes e afins em ingles
+- Mensagem de commit em ingles
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Atividade número 1
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+Crie um file correspondente a sua classe (file com index e css)
+Adicione o seu file no arquivo de rotas (Router)
+Adicione o seu file no menu lateral
+Crie um arquivo react contendo a grid correspondente com sua classe
+Commit
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## Atividade número 1
 
-## Learn More
+Antes de começar use o codigo git chekout para criar uma nova branch para voce,
+cujo o nome seja o nome da sua classe
+```
+git checkout -b nomeDaSuaBranch
+```
+Apos fazer as mudanças ultilize o codigo git add para adicionar os files alterados
+```
+git add .
+```
+No exemplo acima usamos o . para identificar que vamos commitar todos os files alterados
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Commite suas mudanças com uma frase explicando oque fez
+```
+git commit -m "Your commit message in English Here"
+```
+Para finalizar der um git push
+```
+npm push
+```
+Caso Nunca tenha usado o git na sua maquina não esqueça de configurar usuario e name 
+com o seguinte comando
+```
+git config --global user.email "you@example.com" git config --global user.name "Your Name"
+```
 
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
