@@ -5,7 +5,7 @@ import  Grid from '../../Componentes/Grid'
 export default function Home() {
   return (
     <div>
-      <Grid 
+      <Grid
       contentTable="Paciente"
       nameTable="Tabela Paciente"
       itemTable={[{name:'Bruna'}, {name:'Barbara'},{name:'Scooby'}]}
