@@ -4,7 +4,7 @@ import './index.css';
 export default function Home() {
   return (
     <nav className='navbar-supermarket'>
-        <div><h1>Gelp Clinica</h1></div>
+        <div><h1>Gelp</h1></div>
     </nav>
   );
 }
