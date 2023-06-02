@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { FaChevronLeft, FaChevronRight, FaHome, FaAccessibleIcon } from 'react-icons/fa';
+import { FaChevronLeft, FaChevronRight, FaHome, FaAccessibleIcon, FaStethoscope } from 'react-icons/fa';
 import './index.css';
 function SideMenu() {
   const [isExpanded, setIsExpanded] = useState(true);
@@ -32,6 +32,18 @@ function SideMenu() {
               </>
             ) : (
               <FaAccessibleIcon />
+            )}
+          </a>
+        </li>
+        <li>
+          <a href="/specialty">
+            {isExpanded ? (
+              <>
+                <FaStethoscope />
+                <span>Especialidade</span>
+              </>
+            ) : (
+              <FaStethoscope />
             )}
           </a>
         </li>
