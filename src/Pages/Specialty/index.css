@@ -1,0 +1,14 @@
+.button-add-prouct {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    background-color: #445D0B;
+}
+.tableContainer {
+    max-width: 600;
+    margin: '0 auto';
+    margin-top: 20;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
