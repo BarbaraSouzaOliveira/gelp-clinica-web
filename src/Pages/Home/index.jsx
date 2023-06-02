@@ -6,8 +6,8 @@ export default function Home() {
   return (
     <div>
       <Grid
-      contentTable="Paciente"
-      nameTable="Tabela Paciente"
+      contentTable="Home"
+      nameTable="Tabela Home"
       itemTable={[{name:'Bruna'}, {name:'Barbara'},{name:'Scooby'}]}
       />
     </div>
