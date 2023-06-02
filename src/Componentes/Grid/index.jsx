@@ -53,7 +53,7 @@ const Grid = (props) => {
           </TableRow>
         </TableHead>
         <TableBody>
-          
+
             {
               props.itemTable.map((item) => {
                 return (
