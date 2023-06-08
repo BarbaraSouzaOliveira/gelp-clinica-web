@@ -7,7 +7,7 @@
     padding: 1rem;
     align-items: center;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
 }
 .profile{
     display: flex;
