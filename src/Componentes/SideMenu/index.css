@@ -41,14 +41,11 @@
   
   .menu-toggle svg {
     position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    left: 50%;
-    transform: translate(-50%, -50%);
     border-radius: 50%;
-    background-color: rgba(5, 61, 61, 0.315);
-    padding: 10px;
-    box-sizing: border-box;
+    background-color: #4de7c1;
+    color: #fff;
+    padding: 4px;
+    border: 2px solid #fff;
   }
   
   .menu-items {
